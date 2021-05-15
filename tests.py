@@ -102,6 +102,6 @@ def test_seidel_method(quantity_of_test: int):
 
 if __name__ == "__main__":
     test_LU_decomposition(10)
-    # test_get_reverse_matrix(10)
-    # test_SLAU_solving(10)
-    # test_seidel_method(10)
+    test_get_reverse_matrix(10)
+    test_SLAU_solving(10)
+    test_seidel_method(10)
