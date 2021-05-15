@@ -34,5 +34,7 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
+        pip install numpy
+        pip install scipy
         export PYTHONPATH=src
         pytest
