@@ -1,6 +1,7 @@
 import numpy as np
 from LU_decomposition import get_LU_decomposition, get_reverse_matrix
 from scipy.sparse import csr_matrix
+from SLAU import solve
 
 n = int(input("Enter dim of matrix: "))
 print("Enter matrix:")
@@ -17,3 +18,10 @@ print(U.toarray(), '\n')
 
 print("Reverse matrix:")
 print(get_reverse_matrix(csr_matrix(a)).toarray(), '\n')
+
+print("Enter vector b:")
+b = list(map(float, input().split()))
+
+print("Solution vector:")
+x = solve(csr_matrix(a), csr_matrix(b))
+print(x.toarray())
