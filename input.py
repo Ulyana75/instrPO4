@@ -3,6 +3,10 @@ from LU_decomposition import get_LU_decomposition, get_reverse_matrix
 from scipy.sparse import csr_matrix
 from SLAU import solve
 
+"""
+Input data from user
+"""
+
 n = int(input("Enter dim of matrix: "))
 print("Enter matrix:")
 a = np.zeros((n, n))
